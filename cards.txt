@@ -1,0 +1,58 @@
+<a href="index.htm" aria-current="page"
+            class="sales-card w-inline-block w--current">
+            <div class="sales-card-image"><img src="68c9c39b88fdc718ad27d553/68d6ae3122ee7ba06b564fa5_Home%20%231.webp"
+                loading="lazy" sizes="100vw" alt="" class="image-cover"></div>
+            <div class="text-sales-card">Homepage #1</div>
+          </a><a href="homepage/home-b.html" class="sales-card w-inline-block">
+            <div class="sales-card-image"><img src="68c9c39b88fdc718ad27d553/68d6ae31a81df6cada965275_Home%20%232.webp"
+                loading="lazy" sizes="100vw" alt="" class="image-cover"></div>
+            <div class="text-sales-card">Homepage #2</div>
+          </a><a href="homepage/home-c.html" class="sales-card w-inline-block">
+            <div class="sales-card-image"><img src="68c9c39b88fdc718ad27d553/68d6ae3186d01bf2ee8cbf70_Home%20%233.webp"
+                loading="lazy" sizes="100vw" alt="" class="image-cover"></div>
+            <div class="text-sales-card">Homepage #3</div>
+          </a><a href="service/service-a.html" class="sales-card w-inline-block">
+            <div class="sales-card-image"><img src="68c9c39b88fdc718ad27d553/68d6ae31e803019b5f741a1f_Service%20%231.webp"
+                loading="lazy" sizes="100vw" alt="" class="image-cover"></div>
+            <div class="text-sales-card">Service #1</div>
+          </a><a href="service/service-b.html" class="sales-card w-inline-block">
+            <div class="sales-card-image"><img src="68c9c39b88fdc718ad27d553/68d6ae31a4b2e3f78ab3b6f6_Service%20%232.webp"
+                loading="lazy" sizes="100vw" alt="" class="image-cover"></div>
+            <div class="text-sales-card">Service #2</div>
+          </a><a href="service/service-c.html" class="sales-card w-inline-block">
+            <div class="sales-card-image"><img src="68c9c39b88fdc718ad27d553/68d6ae31f8f9b67f5bbd1c3e_Service%20%233.webp"
+                loading="lazy" sizes="100vw" alt="" class="image-cover"></div>
+            <div class="text-sales-card">Service #3</div>
+          </a><a href="contact/contact-a.html" class="sales-card w-inline-block">
+            <div class="sales-card-image"><img src="68c9c39b88fdc718ad27d553/68d6ae3188ff6e636c4365c4_Contact%20%231.webp"
+                loading="lazy" sizes="100vw" alt="" class="image-cover"></div>
+            <div class="text-sales-card">Contact #1</div>
+          </a><a href="about.html" class="sales-card w-inline-block">
+            <div class="sales-card-image"><img src="68c9c39b88fdc718ad27d553/68d6ae317ae3fb6b600241ad_About.webp"
+                loading="lazy" sizes="100vw" alt="" class="image-cover"></div>
+            <div class="text-sales-card">About</div>
+          </a><a href="careers.html" class="sales-card w-inline-block">
+            <div class="sales-card-image"><img src="68c9c39b88fdc718ad27d553/68d6ae3190470309f6dbbd13_Careers.webp"
+                loading="lazy" sizes="100vw" alt="" class="image-cover"></div>
+            <div class="text-sales-card">Careers</div>
+          </a><a href="pricing.html" class="sales-card w-inline-block">
+            <div class="sales-card-image"><img src="68c9c39b88fdc718ad27d553/68d6ae312ea480195f4f03e1_Pricing.webp"
+                loading="lazy" sizes="100vw" alt="" class="image-cover"></div>
+            <div class="text-sales-card">Pricing</div>
+          </a><a href="news-insights.html" class="sales-card w-inline-block">
+            <div class="sales-card-image"><img src="68c9c39b88fdc718ad27d553/68d6ae31e7536c8616ec59fa_Blog.webp"
+                loading="lazy" sizes="100vw" alt="" class="image-cover"></div>
+            <div class="text-sales-card">Blog</div>
+          </a><a href="privacy-policy.html" class="sales-card w-inline-block">
+            <div class="sales-card-image"><img src="68c9c39b88fdc718ad27d553/68d6ae324b3a3ba51ac0d2c3_Legal.webp"
+                loading="lazy" sizes="100vw" alt="" class="image-cover"></div>
+            <div class="text-sales-card">Legal</div>
+          </a><a href="404.html" class="sales-card w-inline-block">
+            <div class="sales-card-image"><img src="68c9c39b88fdc718ad27d553/68d6ae3196874b31d8ef01ba_404.webp"
+                loading="lazy" sizes="100vw" alt="" class="image-cover"></div>
+            <div class="text-sales-card">404</div>
+          </a><a href="401.html" class="sales-card w-inline-block">
+            <div class="sales-card-image"><img src="68c9c39b88fdc718ad27d553/68d6ae31493732733fc4d492_Password.webp"
+                loading="lazy" sizes="100vw" alt="" class="image-cover"></div>
+            <div class="text-sales-card">Password</div>
+          </a>
