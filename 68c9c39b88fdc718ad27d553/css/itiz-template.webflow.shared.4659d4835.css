@@ -4190,10 +4190,21 @@ img {
   width: 100%;
   display: flex;
 }
+.logo-footer-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0a0a0a;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+}
 
 .brand-footer {
   max-width: 194px;
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .footer-bottom-right {
