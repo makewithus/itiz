@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html data-wf-domain="itiz-template.webflow.io" data-wf-page="68c9c39b88fdc718ad27d539"
   data-wf-site="68c9c39b88fdc718ad27d553" lang="en">
 
@@ -118,6 +118,26 @@
     .footer-office-detail a {
       color: inherit;
       text-decoration: underline;
+    }
+
+    @keyframes tech-breathe {
+      0% { transform: scale3d(1, 1, 1); filter: brightness(1); }
+      50% { transform: scale3d(1.08, 1.08, 1); filter: brightness(1.1) saturate(1.1); }
+      100% { transform: scale3d(1, 1, 1); filter: brightness(1); }
+    }
+    
+    .animated-tech-img {
+      animation: tech-breathe 12s ease-in-out infinite;
+      will-change: transform, filter;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      transform: translateZ(0); /* Hardware acceleration */
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: high-quality;
+    }
+    
+    .hero-grid-2x3 .image-wrap-case-small {
+      overflow: hidden !important;
     }
   </style>
 </head>
@@ -395,7 +415,7 @@
             <!-- Box 1 -->
             <a href="news-insights/decoding-risk-a-new-approach-to-operational-oversight-2.html" class="card-case-small w-inline-block">
               <div class="image-wrap-case-small">
-                <img class="image-cover" src="68c9c39b88fdc718ad27d553/68d042e3df9fe9f0aa6773b8_Graph%20Image.webp" alt="" loading="lazy">
+                <img class="image-cover animated-tech-img" style="animation-delay: 0s;" src="images/generated/digital_intelligence.jpg" alt="Digital Intelligence" loading="lazy">
               </div>
               <div class="content-case-small">
                 <div class="text-small">Decoding risk: A new approach to operational oversight</div>
@@ -411,7 +431,7 @@
             <!-- Box 2 -->
             <a href="news-insights/decoding-risk-a-new-approach-to-operational-oversight-2.html" class="card-case-small w-inline-block">
               <div class="image-wrap-case-small">
-                <img class="image-cover" src="68c9c39b88fdc718ad27d553/68d042e3df9fe9f0aa6773b8_Graph%20Image.webp" alt="" loading="lazy">
+                <img class="image-cover animated-tech-img" style="animation-delay: -1.33s;" src="images/generated/data_analytics.jpg" alt="Data Analytics" loading="lazy">
               </div>
               <div class="content-case-small">
                 <div class="text-small">Decoding risk: A new approach to operational oversight</div>
@@ -427,7 +447,7 @@
             <!-- Box 3 -->
             <a href="news-insights/decoding-risk-a-new-approach-to-operational-oversight-2.html" class="card-case-small w-inline-block">
               <div class="image-wrap-case-small">
-                <img class="image-cover" src="68c9c39b88fdc718ad27d553/68d042e3df9fe9f0aa6773b8_Graph%20Image.webp" alt="" loading="lazy">
+                <img class="image-cover animated-tech-img" style="animation-delay: -2.66s;" src="images/generated/systems_architecture.jpg" alt="Systems Architecture" loading="lazy">
               </div>
               <div class="content-case-small">
                 <div class="text-small">Decoding risk: A new approach to operational oversight</div>
@@ -443,7 +463,7 @@
             <!-- Box 4 -->
             <a href="news-insights/decoding-risk-a-new-approach-to-operational-oversight-2.html" class="card-case-small w-inline-block">
               <div class="image-wrap-case-small">
-                <img class="image-cover" src="68c9c39b88fdc718ad27d553/68d042e3df9fe9f0aa6773b8_Graph%20Image.webp" alt="" loading="lazy">
+                <img class="image-cover animated-tech-img" style="animation-delay: -3.99s;" src="images/generated/connected_technology.jpg" alt="Connected Technology" loading="lazy">
               </div>
               <div class="content-case-small">
                 <div class="text-small">Decoding risk: A new approach to operational oversight</div>
@@ -459,7 +479,7 @@
             <!-- Box 5 -->
             <a href="news-insights/decoding-risk-a-new-approach-to-operational-oversight-2.html" class="card-case-small w-inline-block">
               <div class="image-wrap-case-small">
-                <img class="image-cover" src="68c9c39b88fdc718ad27d553/68d042e3df9fe9f0aa6773b8_Graph%20Image.webp" alt="" loading="lazy">
+                <img class="image-cover animated-tech-img" style="animation-delay: -5.32s;" src="images/generated/research_innovation.jpg" alt="Research Innovation" loading="lazy">
               </div>
               <div class="content-case-small">
                 <div class="text-small">Decoding risk: A new approach to operational oversight</div>
@@ -475,7 +495,7 @@
             <!-- Box 6 -->
             <a href="news-insights/decoding-risk-a-new-approach-to-operational-oversight-2.html" class="card-case-small w-inline-block">
               <div class="image-wrap-case-small">
-                <img class="image-cover" src="68c9c39b88fdc718ad27d553/68d042e3df9fe9f0aa6773b8_Graph%20Image.webp" alt="" loading="lazy">
+                <img class="image-cover animated-tech-img" style="animation-delay: -6.65s;" src="images/generated/secure_networks.jpg" alt="Secure Networks" loading="lazy">
               </div>
               <div class="content-case-small">
                 <div class="text-small">Decoding risk: A new approach to operational oversight</div>
@@ -505,9 +525,8 @@
           data-w-id="0d801c40-66e6-767f-fa3d-c80eed462d30" class="card-service-expandable w-inline-block">
           <div class="image-wrap-service-expandable"><img
               style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-              sizes="(max-width: 767px) 100vw, (max-width: 991px) 727.96875px, 939.984375px" alt=""
-              src="68c9c39b88fdc718ad27d553/68d0148cff501cf1eb64aa89_Expandable%20Image.webp" loading="lazy"
-              srcset="68c9c39b88fdc718ad27d553/68d0148cff501cf1eb64aa89_Expandable%20Image-p-500.webp 500w, 68c9c39b88fdc718ad27d553/68d0148cff501cf1eb64aa89_Expandable%20Image-p-800.webp 800w, 68c9c39b88fdc718ad27d553/68d0148cff501cf1eb64aa89_Expandable%20Image-p-1080.webp 1080w, 68c9c39b88fdc718ad27d553/68d0148cff501cf1eb64aa89_Expandable%20Image.webp 1360w"
+              alt="Precision engineering and technical excellence"
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1080&auto=format&fit=crop" loading="lazy"
               class="image-cover"></div>
           <div class="overlay-exoandable"></div>
           <div class="service-expandable-inner">
@@ -532,9 +551,8 @@
           class="card-service-expandable w-inline-block">
           <div class="image-wrap-service-expandable"><img
               style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-              sizes="(max-width: 767px) 100vw, (max-width: 991px) 727.96875px, 939.984375px" alt=""
-              src="68c9c39b88fdc718ad27d553/68d0148c274b7b3aa048c3ff_Expandable%20Image-1.webp" loading="lazy"
-              srcset="68c9c39b88fdc718ad27d553/68d0148c274b7b3aa048c3ff_Expandable%20Image-1-p-500.webp 500w, 68c9c39b88fdc718ad27d553/68d0148c274b7b3aa048c3ff_Expandable%20Image-1-p-800.webp 800w, 68c9c39b88fdc718ad27d553/68d0148c274b7b3aa048c3ff_Expandable%20Image-1-p-1080.webp 1080w, 68c9c39b88fdc718ad27d553/68d0148c274b7b3aa048c3ff_Expandable%20Image-1.webp 1360w"
+              alt="Strategic digital security hardware"
+              src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1080&auto=format&fit=crop" loading="lazy"
               class="image-cover"></div>
           <div class="overlay-exoandable"></div>
           <div class="service-expandable-inner">
@@ -714,10 +732,8 @@
         <div class="tab-content">
           <div id="software" class="tab-content-item large">
             <div class="card-feature"><img
-                src="68c9c39b88fdc718ad27d553/68ce62e33f2792b01c46a3d4_Article%20Body%20Image.webp" loading="lazy"
-                sizes="(max-width: 767px) 100vw, (max-width: 991px) 727.984375px, 939.96875px"
-                srcset="68c9c39b88fdc718ad27d553/68ce62e33f2792b01c46a3d4_Article%20Body%20Image-p-500.webp 500w, 68c9c39b88fdc718ad27d553/68ce62e33f2792b01c46a3d4_Article%20Body%20Image-p-800.webp 800w, 68c9c39b88fdc718ad27d553/68ce62e33f2792b01c46a3d4_Article%20Body%20Image.webp 1029w"
-                alt="" class="image-cover">
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1080&auto=format&fit=crop" loading="lazy"
+                alt="Custom software development showing laptop and code" class="image-cover">
               <div class="overlay-card-feature full">
                 <div class="icon-wrap-medium">
                   <div class="icon-large w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none"
@@ -737,10 +753,8 @@
             </div>
           </div>
           <div id="cloud" class="tab-content-item">
-            <div class="card-feature"><img src="68c9c39b88fdc718ad27d553/68cfe491514c84ecf2811028_Feature%20Image.webp"
-                loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
-                srcset="68c9c39b88fdc718ad27d553/68cfe491514c84ecf2811028_Feature%20Image-p-500.webp 500w, 68c9c39b88fdc718ad27d553/68cfe491514c84ecf2811028_Feature%20Image-p-800.webp 800w, 68c9c39b88fdc718ad27d553/68cfe491514c84ecf2811028_Feature%20Image-p-1080.webp 1080w, 68c9c39b88fdc718ad27d553/68cfe491514c84ecf2811028_Feature%20Image.webp 1360w"
-                alt="" class="image-cover">
+            <div class="card-feature"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1080&auto=format&fit=crop"
+                loading="lazy" alt="Cloud computing server infrastructure and data center" class="image-cover">
               <div class="overlay-card-feature full">
                 <div class="icon-wrap-medium">
                   <div class="icon-large w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none"
@@ -761,10 +775,8 @@
             </div>
           </div>
           <div id="security" class="tab-content-item">
-            <div class="card-feature"><img src="68c9c39b88fdc718ad27d553/68cfbe30b77de4110307150e_IMG-4.webp"
-                loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 727.984375px, 939.984375px"
-                srcset="68c9c39b88fdc718ad27d553/68cfbe30b77de4110307150e_IMG-4-p-500.webp 500w, 68c9c39b88fdc718ad27d553/68cfbe30b77de4110307150e_IMG-4-p-800.webp 800w, 68c9c39b88fdc718ad27d553/68cfbe30b77de4110307150e_IMG-4-p-1080.webp 1080w, 68c9c39b88fdc718ad27d553/68cfbe30b77de4110307150e_IMG-4.webp 1360w"
-                alt="" class="image-cover">
+            <div class="card-feature"><img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1080&auto=format&fit=crop"
+                loading="lazy" alt="Cybersecurity matrix green digital code" class="image-cover">
               <div class="overlay-card-feature full">
                 <div class="icon-wrap-medium">
                   <div class="icon-large w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none"
@@ -784,10 +796,8 @@
             </div>
           </div>
           <div id="analytics" class="tab-content-item">
-            <div class="card-feature"><img src="68c9c39b88fdc718ad27d553/68cfe4201df312001ba5b1e0_IMG-5.webp"
-                loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 727.984375px, 939.984375px"
-                srcset="68c9c39b88fdc718ad27d553/68cfe4201df312001ba5b1e0_IMG-5-p-500.webp 500w, 68c9c39b88fdc718ad27d553/68cfe4201df312001ba5b1e0_IMG-5-p-800.webp 800w, 68c9c39b88fdc718ad27d553/68cfe4201df312001ba5b1e0_IMG-5-p-1080.webp 1080w, 68c9c39b88fdc718ad27d553/68cfe4201df312001ba5b1e0_IMG-5.webp 1360w"
-                alt="" class="image-cover">
+            <div class="card-feature"><img src="https://images.unsplash.com/photo-1543286386-2e659306cd6c?q=80&w=1080&auto=format&fit=crop"
+                loading="lazy" alt="Business intelligence and data analytics charts on screen" class="image-cover">
               <div class="overlay-card-feature full">
                 <div class="icon-wrap-medium">
                   <div class="icon-large w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none"
@@ -1119,9 +1129,7 @@
               class="card-case-regular w-inline-block">
               <div class="content-case-card">
                 <div class="image-wrap-case-regular"><img
-                    src="68c9c39b88fdc718ad27d573/68ce65120ec3dbdca3e372ff_IMG-1.png" loading="lazy" cms-image="" alt=""
-                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 726.625px, 939.15625px"
-                    srcset="68c9c39b88fdc718ad27d573/68ce65120ec3dbdca3e372ff_IMG-1-p-500.png 500w, 68c9c39b88fdc718ad27d573/68ce65120ec3dbdca3e372ff_IMG-1-p-800.png 800w, 68c9c39b88fdc718ad27d573/68ce65120ec3dbdca3e372ff_IMG-1-p-1080.png 1080w, 68c9c39b88fdc718ad27d573/68ce65120ec3dbdca3e372ff_IMG-1.png 1360w"
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1080&auto=format&fit=crop" loading="lazy" cms-image="" alt="Data dashboard showing analytical graphs for risk decoding"
                     class="image-cover"></div>
                 <div class="case-card-top-tile">
                   <div class="cms-info-tile">
@@ -1156,9 +1164,7 @@
               class="card-case-regular w-inline-block">
               <div class="content-case-card">
                 <div class="image-wrap-case-regular"><img
-                    src="68c9c39b88fdc718ad27d573/68ce64b7de09f2258b65e69d_IMG-5.png" loading="lazy" cms-image="" alt=""
-                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 726.625px, 939.15625px"
-                    srcset="68c9c39b88fdc718ad27d573/68ce64b7de09f2258b65e69d_IMG-5-p-500.png 500w, 68c9c39b88fdc718ad27d573/68ce64b7de09f2258b65e69d_IMG-5-p-800.png 800w, 68c9c39b88fdc718ad27d573/68ce64b7de09f2258b65e69d_IMG-5-p-1080.png 1080w, 68c9c39b88fdc718ad27d573/68ce64b7de09f2258b65e69d_IMG-5.png 1360w"
+                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1080&auto=format&fit=crop" loading="lazy" cms-image="" alt="Technology circuit board representing engineering and transparent trust"
                     class="image-cover"></div>
                 <div class="case-card-top-tile">
                   <div class="cms-info-tile">
@@ -1193,9 +1199,7 @@
               class="card-case-regular w-inline-block">
               <div class="content-case-card">
                 <div class="image-wrap-case-regular"><img
-                    src="68c9c39b88fdc718ad27d573/68ce56294dad878ff1af4ee5_IMG-6.png" loading="lazy" cms-image="" alt=""
-                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 726.625px, 939.15625px"
-                    srcset="68c9c39b88fdc718ad27d573/68ce56294dad878ff1af4ee5_IMG-6-p-500.png 500w, 68c9c39b88fdc718ad27d573/68ce56294dad878ff1af4ee5_IMG-6-p-800.png 800w, 68c9c39b88fdc718ad27d573/68ce56294dad878ff1af4ee5_IMG-6-p-1080.png 1080w, 68c9c39b88fdc718ad27d573/68ce56294dad878ff1af4ee5_IMG-6.png 1368w"
+                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1080&auto=format&fit=crop" loading="lazy" cms-image="" alt="Data-driven system visualization representing a modern digital network"
                     class="image-cover"></div>
                 <div class="case-card-top-tile">
                   <div class="cms-info-tile">
@@ -1632,6 +1636,7 @@
       }
     })();
   </script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 
 </html>
