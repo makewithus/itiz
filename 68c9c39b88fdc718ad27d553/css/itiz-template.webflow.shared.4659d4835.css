@@ -3241,7 +3241,7 @@ img {
 .footer {
   z-index: 1;
   padding-top: var(--section-padding--small);
-  padding-bottom: var(--grid--page-padding);
+  padding-bottom: 0;
   width: 100%;
 }
 
@@ -4191,7 +4191,7 @@ img {
   display: flex;
 }
 .logo-footer-text {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -4205,6 +4205,57 @@ img {
   max-width: 194px;
   display: flex;
   align-items: center;
+}
+
+/* Keep the large footer logo clear of the fixed "Pages" widget (bottom-left, hidden below 768px) */
+.footer-logo-wrap {
+  margin-bottom: 72px;
+}
+
+.footer-logo-wrap .brand-footer {
+  max-width: none;
+}
+
+/* Match the bottom edge of the "Pages" widget (8px offset + 8px inner padding) */
+.footer-bottom-right {
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-logo-wrap {
+    margin-bottom: 0;
+  }
+}
+
+.logo-nav-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #0a0a0a;
+}
+
+/* Navbar icon: continuous rotation, same pace as the "Pages" widget logo (360deg / 2s, linear) */
+.logo-symbol-spin {
+  transform-origin: 50% 50%;
+  animation: logo-symbol-spin 2s linear infinite;
+}
+
+@keyframes logo-symbol-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-symbol-spin {
+    animation: none;
+  }
 }
 
 .footer-bottom-right {
@@ -4543,6 +4594,140 @@ img {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+/* Themed dropdown (js/itiz-custom-select.js) — native <select> stays for form submission */
+.itiz-select-native {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.itiz-select-trigger {
+  color: var(--_🎨-color--tokens---input-filled--text, var(--_🎨-color--tokens---text-body--strong));
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  padding-right: calc(var(--spacing--16) * 2 + 24px);
+  display: block;
+  overflow: hidden;
+}
+
+.itiz-select-trigger.is-placeholder {
+  color: var(--_🎨-color--tokens---input--label);
+}
+
+.itiz-select-open .itiz-select-trigger {
+  border-color: var(--_🎨-color--tokens---input-active--border);
+}
+
+.itiz-select-invalid .itiz-select-trigger {
+  border-color: var(--_🎨-color--tokens---input-error--border, var(--_🎨-color--base---accent--primary));
+}
+
+.itiz-select-native ~ .select-field-overlay {
+  z-index: 1;
+}
+
+.itiz-select-native ~ .select-field-overlay .icon-select {
+  transition: transform 0.25s ease;
+}
+
+.itiz-select-open .select-field-overlay .icon-select {
+  transform: rotate(180deg);
+}
+
+.itiz-select-list {
+  z-index: 20;
+  max-height: 248px;
+  margin: 0;
+  padding: var(--spacing--4, 4px);
+  border: 1px solid var(--_🎨-color--tokens---border--subtle);
+  border-radius: var(--_🔘-radius---ui-elements--input);
+  background-color: var(--_🎨-color--tokens---background--lift-80-opacity);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+}
+
+.itiz-select-open .itiz-select-list {
+  display: block;
+  animation: itiz-select-in 0.18s ease-out;
+}
+
+.itiz-select-up .itiz-select-list {
+  top: auto;
+  bottom: calc(100% + 6px);
+}
+
+.itiz-select-option {
+  grid-column-gap: var(--spacing--12);
+  grid-row-gap: var(--spacing--12);
+  padding: var(--spacing--8) var(--spacing--12);
+  border-radius: calc(var(--_🔘-radius---ui-elements--input) - 2px);
+  color: var(--_🎨-color--tokens---text-body--medium);
+  font-family: var(--_🔠-typography---font-family--body-2);
+  font-size: var(--_🔠-typography---size--body-2);
+  line-height: var(--_🔠-typography---line-height--body-2);
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+}
+
+.itiz-select-option::before {
+  content: "";
+  background-color: var(--_🎨-color--base---accent--primary);
+  flex: none;
+  width: 6px;
+  height: 6px;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.itiz-select-option.is-active {
+  background-color: var(--_🎨-color--tokens---border--subtle);
+  color: var(--_🎨-color--tokens---text-body--strong);
+}
+
+.itiz-select-option[aria-selected="true"] {
+  color: var(--_🎨-color--tokens---text-body--strong);
+}
+
+.itiz-select-option[aria-selected="true"]::before {
+  opacity: 1;
+}
+
+.itiz-select-option[aria-disabled="true"] {
+  opacity: 0.4;
+  cursor: default;
+}
+
+@keyframes itiz-select-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .itiz-select-open .itiz-select-list {
+    animation: none;
+  }
 }
 
 .master-label {
